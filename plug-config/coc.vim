@@ -21,8 +21,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-" save file 
-nmap <silent><f2> :w 
+
 " use <tab> for trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -38,7 +37,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " select auto completion 
 inoremap <silent><expr> <c-E> coc#_select_confirm()  
 "trigger auto completion
-  inoremap <silent><expr> <c-k> coc#refresh()
+inoremap <silent><expr> <c-k> coc#refresh()
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>

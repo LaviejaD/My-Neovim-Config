@@ -27,14 +27,13 @@ let g:lightline  ={
   \		'brach':'Gitbrach',
   \		'cocstatus': 'coc#status',
   \		'currentfunction': 'CocCurrentFunction',
-  \		'tiempo':'Tiempo' 
+  \		'tiempo':'Time', 
   \ }
   \ }
 
+function! Time () abort
 
-function! Tiempo () abort
-   let tiempo =strftime("%I:%M %p")
-
+   let tiempo =strftime("%I:%M ")
    "return time 
    return tiempo
 endfunction 

@@ -1,4 +1,6 @@
 {
+  "godot.enable": true,
+  "godot.lsp_server_port": 6005,
   "rust": ["rust"],
   "snippets.ultisnips.usePythonx": false,
   "coc.preferences.formatOnSaveFiletypes": [
