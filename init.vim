@@ -93,7 +93,6 @@ let g:coc_global_extensions = ['coc-toml',
                         \'coc-git',
                         \'coc-html',
                         \'coc-emmet',
-                        \'coc-discord-neovim',
                         \'coc-highlight',
                         \'coc-rust-analyzer',
                         \]
