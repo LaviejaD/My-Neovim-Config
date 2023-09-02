@@ -14,7 +14,7 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=4000
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
@@ -91,14 +91,6 @@ let g:coc_explorer_global_presets = {
 \   }
 \ }
 
-
-
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-"Prettier
-
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-nmap <space>t :Prettier<CR>
-

@@ -48,5 +48,5 @@ function! Gitbrach() abort
    let brach = get(g:,'coc_git_status','')
    "return brach
    return winwidth(0) >120 ? brach : ''
-   endfunction
+endfunction
 

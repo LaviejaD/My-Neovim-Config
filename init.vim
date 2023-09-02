@@ -7,7 +7,6 @@ call plug#begin()
 "color Schemas
 Plug 'techtuner/aura-neovim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'wafelack/rust-snippets'
 " status bar 
 Plug 'itchyny/lightline.vim'
 "Documentation with jsDoc
@@ -50,10 +49,14 @@ runtime plug-config/MarkdownPreview.vim
 "key map
 runtime keymaps.vim 
 
+set guicursor=|
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
 set listchars=tab:▷▷⋮
 set tabstop=4
 set expandtab 
 set winwidth=100
+
+set clipboard=unnamed
 
 "set winminheight=5
 set winheight=999
@@ -70,8 +73,8 @@ set clipboard=unnamed
 "search 
 set hlsearch!
 
-"colorscheme dracula
-colorscheme aura
+colorscheme dracula
+"colorscheme aura
 set termguicolors
 
 
@@ -96,5 +99,3 @@ let g:coc_global_extensions = ['coc-toml',
                         \'coc-highlight',
                         \'coc-rust-analyzer',
                         \]
-
-
